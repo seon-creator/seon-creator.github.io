@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+}
+
+/* 플렉스 박스를 사용해 제목과 X 버튼을 한 줄로 배치 */
+.header {
+    display: flex;
+    justify-content: space-between; /* 제목과 X 버튼을 양 끝으로 배치 */
+    align-items: center; /* X 버튼과 제목을 수직으로 가운데 정렬 */
+    font-size: 2em;
+    padding: 20px 0;
+}
+
+.close-button a {
+    text-decoration: none;
+    font-size: 24px; /* X 버튼 크기 설정 */
+    color: #333; /* X 버튼 색상 */
+    padding: 5px 10px;
+    background-color: #f2f2f2;
+    border-radius: 50%; /* 동그랗게 처리 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+}
+
+.close-button a:hover {
+    background-color: #e0e0e0; /* 마우스 오버 시 색상 변경 */
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.photo {
+    width: 48%;
+    background-color: #add8e6;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px; /* 요소 사이 간격을 위해 추가 */
+    border-radius: 10px; /* 콘텐츠 모서리를 둥글게 */
+    overflow: hidden; /* 둥근 모서리 내에서 내용이 잘리도록 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 박스에 약간의 그림자 추가 */
+}
+
+/* h2에 흰 배경 추가 및 스타일 적용 */
+.photo h2 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 0; /* 상단 간격 없앰 */
+    margin-bottom: 10px;
+    background-color: white; /* 소제목 배경을 흰색으로 */
+    padding: 10px;
+    border-radius: 5px; /* 소제목 부분의 모서리를 둥글게 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 소제목에 약간의 그림자 추가 */
+}
+
+/* 이미지 크기를 통일시키기 위한 수정 */
+.photo img {
+    width: 100%;
+    height: 300px; /* 모든 이미지의 높이를 300px로 고정 */
+    object-fit: cover; /* 이미지의 비율을 유지하며 잘라냄 */
+}
+
+/* 설명 영역을 흰색 배경으로 설정 */
+.description {
+    background-color: white; /* 배경을 흰색으로 설정 */
+    padding: 15px;
+    margin-top: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 약간의 그림자 추가 */
+    border-radius: 5px; /* 모서리를 둥글게 */
+}
+
+.description p {
+    margin: 5px 0;
+}
