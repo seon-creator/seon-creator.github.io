@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>경주를 소개합니다!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: left;
+            padding: 20px;
+            color: purple;
+            position: relative;
+        }
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px; /* 각 열 사이에 간격 */
+        }
+        .box {
+            flex: 1;
+            background-color: #ffd1f0;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        h1, h2 {
+            margin: 10px 0;
+        }
+        .location {
+            margin-top: 10px;
+        }
+        .location h3, .location p {
+            display: inline;
+            margin: 0;
+        }
+        .landmark-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 10px 0;
+        }
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>경주를 소개합니다!</h1>
+    <button class="close-btn" onclick="window.close()">X</button>
+</header>
+
+<div class="container">
+    <section class="box">
+        <h2>랜드마크: 경주월드</h2>
+        <img src="img/GJ2.jpg" alt="경주월드" class="landmark-image">
+        <div class="location">
+            <h3>위치: </h3>
+            <p>경주시 보문로 544</p>
+        </div>
+    </section>
+
+    <section class="box">
+        <h2>맛집: 맛집</h2>
+        <img src="img/GJ3.jpg" alt="맛집" class="landmark-image">
+        <div class="location">
+            <h3>위치: </h3>
+            <p>경주시 황남동 123-45</p>
+        </div>
+    </section>
+</div>
+
+<footer>
+    <p>Copyright © 2024 경주 소개 페이지</p>
+</footer>
+
+</body>
+</html>
