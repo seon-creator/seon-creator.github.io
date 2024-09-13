@@ -45,9 +45,18 @@
         }
         .location {
             margin-top: 10px;
+            display: flex;
+            flex-direction: column;
         }
-        .location h3, .location p {
-            display: inline;
+        .location .location-info {
+            display: flex;
+            align-items: center;
+        }
+        .location h3 {
+            margin: 0;
+            margin-right: 10px; /* h3와 p 간의 간격 */
+        }
+        .location p {
             margin: 0;
         }
         .landmark-image {
@@ -77,8 +86,11 @@
         <h2>랜드마크: 경주월드</h2>
         <img src="img/GJ2.jpg" alt="경주월드" class="landmark-image">
         <div class="location">
-            <h3>위치: </h3>
-            <p>경주시 보문로 544</p>
+            <div class="location-info">
+                <h3>위치:</h3>
+                <p>경주시 보문로 544</p>
+            </div>
+            <p>이 장소는 꿀잼입니다..</p>
         </div>
     </section>
 
@@ -86,15 +98,15 @@
         <h2>맛집: 맛집</h2>
         <img src="img/GJ3.jpg" alt="맛집" class="landmark-image">
         <div class="location">
-            <h3>위치: </h3>
-            <p>경주시 황남동 123-45</p>
+            <div class="location-info">
+                <h3>위치:</h3>
+                <p>경주시 황남동 123-45</p>
+            </div>
+            <p>이 맛집은 꿀맛입니다..</p>
         </div>
     </section>
 </div>
 
-<footer>
-    <p>Copyright © 2024 경주 소개 페이지</p>
-</footer>
 
 </body>
 </html>

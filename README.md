@@ -50,5 +50,3 @@
   2. comment: 부가설명
   3. merge 방식: squash 방식 적용
 
-
-
