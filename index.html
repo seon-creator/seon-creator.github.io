@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>도시 소개</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script>
+        function openModal(city) {
+            // 모달 창 열기
+            var modal = document.getElementById('modal');
+            var modalContent = document.getElementById('modal-content');
+
+            // 부산.html을 iframe으로 로드
+            modalContent.innerHTML = '<iframe src="' + city + '.html" width="100%" height="500px"></iframe>';
+            modal.style.display = 'block';
+        }
+
+        function closeModal() {
+            // 모달 창 닫기
+            var modal = document.getElementById('modal');
+            modal.style.display = 'none';
+        }
+
+        // 모달 창 밖을 클릭하면 모달을 닫기
+        window.onclick = function(event) {
+            var modal = document.getElementById('modal');
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <h1>국내 여행지를 소개합니다!</h1>
+
+    <div>
+        <button onclick="openModal('Busan')">부산</button>
+        <button onclick="openModal('Seoul')">서울</button>
+        <button onclick="openModal('Jeju')">제주</button>
+        <button onclick="openModal('Gyeongju')">경주</button>
+    </div>
+
+    <!-- Modal 구조 -->
+    <div id="modal" class="modal">
+        <div class="modal-header">
+            <span class="close" onclick="closeModal()">&times;</span>
+        </div>
+        <div class="modal-content" id="modal-content">
+            <!-- Modal content will be loaded here -->
+        </div>
+    </div>
+
+</body>
+</html>

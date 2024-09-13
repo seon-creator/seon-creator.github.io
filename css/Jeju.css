@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* 두 요소 사이 간격 조정 */
+    align-items: flex-start; /* 위쪽으로 정렬 */
+    gap: 20px; /* 간격 추가 */
+    flex-wrap: wrap; /* 작은 화면에서 줄 바꿈 */
+}
+
+/* 박스 크기를 패딩과 여백까지 포함하도록 설정 */
+.랜드마크, .맛집 {
+    flex: 1; /* 요소가 같은 비율로 크기를 차지 */
+    max-width: calc(50% - 20px); /* 각 요소가 50%를 차지하면서 간격을 포함 */
+    box-sizing: border-box; /* padding, border를 포함한 크기 계산 */
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 이미지 크기 조정 */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}

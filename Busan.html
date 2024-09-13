@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>부산을 소개합니다!</title>
+    <link rel="stylesheet" href="css/Busan.css">
+    <script>
+        function closeModal() {
+            // 부모 창의 closeModal 함수 호출
+            parent.closeModal();
+        }
+    </script>
+</head>
+<body>
+
+    <div class="container" id="modal">
+        <div class="header">
+            <h1>부산을 소개합니다!</h1>
+            <!-- X 버튼 -->
+            <div class="close-button">
+                <a href="#" onclick="closeModal()">×</a>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="photo">
+                <h2>부산의 랜드마크</h2>
+                <div class="image">
+                    <img src="img/busan1.jpeg" alt="부산 랜드마크">
+                </div>
+                <div class="description">
+                    <p>- 부산의 대표 랜드마크인 광안대교입니다.</p>
+                    <p>- 해수욕장에서 즐거운 추억을 만들어보세요!</p>
+                </div>
+            </div>
+            <div class="photo">
+                <h2>부산의 대표 맛집</h2>
+                <div class="image">
+                    <img src="img/busan2.jpg" alt="부산 맛집">
+                </div>
+                <div class="description">
+                    <p>- 부산의 대표 맛집인 돌고래국밥입니다.</p>
+                    <p>- 든든한 한끼를 채워보세요!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
