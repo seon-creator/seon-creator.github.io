@@ -1,32 +1,87 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>서울 소개</title>
-  <link rel="stylesheet" href="css/Seoul.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>서울을 소개합니다!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* 메인 타이틀 */
+        h1 {
+            color: purple;
+            font-size: 36px;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        /* 컨테이너 스타일 */
+        .container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 100px;
+            border: 2px solid purple;
+            padding: 20px;
+            background-color: lavender;
+        }
+
+        /* 남산타워와 맛집 각각을 나누는 박스 */
+        .section {
+            width: 45%;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* 타이틀 스타일 */
+        .section h2 {
+            font-size: 24px;
+            font-weight: bold;
+            color: purple;
+            margin-bottom: 10px;
+        }
+
+        /* 이미지 스타일 */
+        .section img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* 설명 텍스트 스타일 */
+        .section p {
+            margin-top: 15px;
+            line-height: 1.6;
+        }
+    </style>
 </head>
 <body>
 
-  <!-- 페이지 컨테이너 -->
-  <div class="container">
-    <h1 class="title">서울을 소개합니다</h1>
+    <!-- 메인 타이틀 -->
+    <h1>서울을 소개합니다!</h1>
 
-    <div class="content">
-      <!-- 왼쪽 섹션: 남산타워 -->
-      <div class="left-section">
-        <img src="https://i.namu.wiki/i/_UC2JkkOZdegJuesvNljgmhNQms8HIxuyxL6ZDle7wRB9ixkBD8Etl5HfkynrgN2vND4YO8dpwZNuLeY-fzyWRsrR2ysj19WDLbmn0gdn5ziSWOE9vIRgmdesiZHybYlr4TwAQSJnYhM7m7sR_scMg.webp" alt="남산타워">
-        <p>남산타워는 서울의 대표적인 랜드마크로 서울특별시 용산구 남산공원길 105에 위치하며 서울의 전경을 한눈에 볼 수 있는 곳입니다.</p>
-      </div>
+    <!-- 컨테이너 -->
+    <div class="container">
+        <!-- 남산타워 섹션 -->
+        <div class="section">
+            <h2>남산타워</h2>
+            <img src="https://i.namu.wiki/i/KQF_EchqutRiuo9uGYfZc5ShC2GgzL2VNRYMa8T-itXdPdFH2o6qHnMDaIdQvEVfSdYSZH6DvhAqCoyeOaaTRmCkk4alC4xkoih2tBj1qukYel1-bUklWH4PNwu5rEngo6YN0FTsSyQ84IRLqCoIXA.webp" alt="남산타워 이미지">
+            <p>주소: 서울특별시 용산구 남산공원길 105</p>
+        </div>
 
-      <!-- 오른쪽 섹션: 맛집 -->
-      <div class="right-section">
-        <img src="https://lh3.googleusercontent.com/p/AF1QipMRerdiNwY7Oph56PHD4wJ09L_uaNQ9_ArBCDM_=s1360-w1360-h1020" alt="목멱산방">
-        <p>'목멱산'은 남산의 옛 이름입니다. 목멱산방은 서울특별시 중구 퇴계로 20길 71, 1층에 위치하며 2009년 남산의 한옥에서 "서울 시민의 자부심이 되는 비빔밥을 선물하겠다"는 사명으로 시작하였습니다. 미슐랭 레스토랑에 그치지 않고 한식의 세계화를 이끄는 한국의 자부심이 되겠습니다.</p>
-      </div>
+        <!-- 맛집 섹션 -->
+        <div class="section">
+            <h2>목멱산방</h2>
+            <img src="https://lh3.googleusercontent.com/p/AF1QipMRerdiNwY7Oph56PHD4wJ09L_uaNQ9_ArBCDM_=s1360-w1360-h1020" alt="맛집 이미지">
+            <p>주소: 서울특별시 중구 퇴계로20길 71</p>
+        </div>
     </div>
-  </div>
 
 </body>
 </html>
-
